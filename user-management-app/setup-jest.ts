@@ -1,4 +1,14 @@
-// setup-jest.ts
+import { getTestBed } from '@angular/core/testing';
+import {
+    BrowserDynamicTestingModule,
+    platformBrowserDynamicTesting,
+} from '@angular/platform-browser-dynamic/testing';
 import '@testing-library/jest-dom';
-import 'jest-preset-angular/setup-jest';
 
+// Verifica se o ambiente já foi inicializado
+if (!getTestBed().platform) {
+  getTestBed().initTestEnvironment(
+    BrowserDynamicTestingModule,
+    platformBrowserDynamicTesting(),
+  );
+}
