@@ -63,33 +63,35 @@ desafio-attus-frontend/
 
 ```
 
+---
+
 ## 📝 Questões Respondidas
 
 ### 1. TypeScript e Qualidade de Código
 
-1.1 Refatoração :arrow_right: [1.1-refatoracao.ts](https://github.com/olhosespanhois/desafio-attus-frontend/blob/main/user-management-app/questoes-teoricas/1-1-refatoracao.ts)
+**1.1** Refatoração :arrow_right: [1.1-refatoracao.ts](https://github.com/olhosespanhois/desafio-attus-frontend/blob/main/user-management-app/questoes-teoricas/1-1-refatoracao.ts)
 
-1.2 Generics e Tipos Utilitários :arrow_right: [1.2-generics-paginacao.ts](https://github.com/olhosespanhois/desafio-attus-frontend/blob/main/user-management-app/questoes-teoricas/1-2-generics-paginacao.ts)
+**1.2** Generics e Tipos Utilitários :arrow_right: [1.2-generics-paginacao.ts](https://github.com/olhosespanhois/desafio-attus-frontend/blob/main/user-management-app/questoes-teoricas/1-2-generics-paginacao.ts)
 
 ### 2. Angular — Fundamentos e Reatividade
 
-2.1 Change Detection e OnPush (2.1-change-detection.ts)
+**2.1** Change Detection e OnPush :arrow_right: [2.1-change-detection.ts](https://github.com/olhosespanhois/desafio-attus-frontend/blob/main/user-management-app/questoes-teoricas/2-1-change-detection.ts)
 
-2.2 RxJS — eliminando subscriptions aninhadas (2.2-rxjs-mergeMap.ts)
+**2.2** RxJS — eliminando subscriptions aninhadas :arrow_right: [2.2-rxjs-mergeMap.ts](https://github.com/olhosespanhois/desafio-attus-frontend/blob/main/user-management-app/questoes-teoricas/2-2-rxjs-mergeMap.ts)
 
-2.3 RxJS — busca com debounce (2.3-rxjs-debounce-search.ts)
+**2.3** RxJS — busca com debounce :arrow_right: [2.3-rxjs-debounce-search.ts](https://github.com/olhosespanhois/desafio-attus-frontend/tree/main/user-management-app/questoes-teoricas/2-3-rxjs-debounce-search)
 
-2.4 Performance — OnPush e trackBy (2.4-trackby-onpush.md)
+**2.4** Performance — OnPush e trackBy :arrow_right: [2.4-trackby-onpush.md](https://github.com/olhosespanhois/desafio-attus-frontend/blob/main/user-management-app/questoes-teoricas/2-4-trackby-onpush.md)
 
 ### 3. Gerenciamento de Estado
 
-3.1 Angular Signals — Carrinho (3.1-signals-carrinho/)
+**3.1** Angular Signals — Carrinho :arrow_right: [3.1-signals-carrinho](https://github.com/olhosespanhois/desafio-attus-frontend/tree/main/user-management-app/questoes-teoricas/3-1-signals-carrinho)
 
-3.2 NgRx — Feature To-do (3.2-ngrx-todo/)
+**3.2** NgRx — Feature To-do :arrow_right: [3.2-ngrx-todo](https://github.com/olhosespanhois/desafio-attus-frontend/tree/main/user-management-app/questoes-teoricas/3-2-ngrx-todo)
 
 ### 4. Desafio Prático — Aplicação de Usuários
 
-🛠️ Tecnologias Utilizadas
+**🛠️ Tecnologias Utilizadas**
 
 - Framework Angular 17+ (Standalone Components)
 - UI Library Angular Material
@@ -99,18 +101,18 @@ desafio-attus-frontend/
 - Validation Reactive Forms + Custom Validators
 - HTTP Client Angular HttpClient (mock interceptors)
 
-## ▶️ Como Executar o Projeto
+#### ▶️ Como Executar o Projeto
 
-Pré-requisitos:
+**Pré-requisitos:**
 
 - bash
 - Node.js (v18+)
 - npm (v9+) ou yarn
 - Angular CLI (v17+)
 
-### Passos
+#### :clipboard: Passos
 
-#### 1. Clone o repositório
+##### 1. Clone o repositório
 
 ```
 git clone https://github.com/olhosespanhois/desafio-attus-frontend.git
@@ -118,23 +120,23 @@ git clone https://github.com/olhosespanhois/desafio-attus-frontend.git
 cd desafio-attus-frontend/user-management-app
 ```
 
-#### 2. Instale as dependências
+##### 2. Instale as dependências
 
-`npm install`
+> npm install
 
-#### 3. Execute a aplicação
+##### 3. Execute a aplicação
 
-`ng serve`
+> ng serve
 
-#### 4. Acesse no navegador
+##### 4. Acesse no navegador
 
-`http://localhost:4200`
+> http://localhost:4200
 
-#### 5. Testes unitários
+##### 5. Testes unitários
 
-`ng test`
+> ng test
 
-### 📦 Scripts Disponíveis
+#### 📦 Scripts Disponíveis
 
 ```json
 {
@@ -147,6 +149,8 @@ cd desafio-attus-frontend/user-management-app
   "test:coverage": "jest --coverage"
 }
 ```
+
+---
 
 ## 👩‍💻 Autora
 
