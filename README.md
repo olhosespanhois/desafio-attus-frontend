@@ -29,12 +29,15 @@ desafio-attus-frontend/
     │    ├── 2.1-change-detection.ts
     │    ├── 2.2-rxjs-mergeMap.ts
     │    ├── 2.3-rxjs-debounce-search.ts
+    │    │   ├── 2-3-rxjs-debounce-search.md
+    │    │   └── carrinho.component.spec.ts
     │    ├── 2.4-trackby-onpush.md
     │    ├── 3.1-signals-carrinho/
+    │    │   ├── 3-1-signals-carrinho.md
     │    │   ├── carrinho.component.ts
     │    │   └── carrinho.component.spec.ts
     │    └── 3.2-ngrx-todo/
-    │        ├── todo.actions.ts
+    │        ├── 3-2-ngrx-todo.md
     │        ├── todo.reducer.ts
     │        ├── todo.selectors.ts
     │        └── todo.effects.ts
@@ -58,7 +61,19 @@ desafio-attus-frontend/
     │ │ └── app.config.ts
     │ ├── assets/
     │ └── environments/
+    ├── .babelrc
+    ├── .editorconfig
+    ├── .gitignore
+    ├── README.md
+    ├── angular.json
+    ├── jest.config.js
+    ├── package-lock.json
     ├── package.json
+    ├── server.ts
+    ├── setup-jest.ts
+    ├── tsconfig.app.json
+    ├── tsconfig.json
+    ├── tsconfig.spec.json
     └── angular.json
 
 ```
@@ -157,6 +172,8 @@ cd desafio-attus-frontend/user-management-app
 **Samira Bittar**
 
 [![Github](https://img.shields.io/badge/GitHub-olhosespanhois-black)](https://github.com/olhosespanhois/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue)](https://www.linkedin.com/in/samiranb/)
+[![Portfólio](https://img.shields.io/badge/Portfólio-bit.ly/4rYZaV4-green)](http://bit.ly/4rYZaV4)
 
 ### 📄 Licença
 
