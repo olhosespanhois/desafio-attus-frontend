@@ -30,7 +30,12 @@ desafio-attus-frontend/
     │    ├── 2.2-rxjs-mergeMap.ts
     │    ├── 2.3-rxjs-debounce-search.ts
     │    │   ├── 2-3-rxjs-debounce-search.md
-    │    │   └── carrinho.component.spec.ts
+    │    │   └── rxjs-debounce-search/
+    │    │        ├── rxjs-debounce-search.component.html
+    │    │        ├── rxjs-debounce-search.component.scss
+    │    │        ├── rxjs-debounce-search.component.spec.ts
+    │    │        ├── rxjs-debounce-search.component.ts
+    │    │        └── rxjs-debounce-search.service.ts
     │    ├── 2.4-trackby-onpush.md
     │    ├── 3.1-signals-carrinho/
     │    │   ├── 3-1-signals-carrinho.md
