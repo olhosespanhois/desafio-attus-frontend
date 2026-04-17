@@ -12,7 +12,7 @@ Reproduzir o protótipo de uma listagem de usuários. A listagem deverá ter as 
 - Estado de loading durante o carregamento e mensagem de erro em caso de falha
 - Os dados podem vir de uma API mockada (JSON Server, MSW ou array estático em serviço)
 
-3. Modal de cadastro de novo usuário com abertura através do botão vermelho que aparece na listagem,criação e edição de usuário (em modal)
+1. Modal de cadastro de novo usuário com abertura através do botão vermelho que aparece na listagem,criação e edição de usuário (em modal)
 
 - cpf (obrigatório), telefone (obrigatório) e tipo de telefone.
 - Validação com mensagens de erro por campo
@@ -66,3 +66,7 @@ Rode ng e2e para executar os testes end-to-end através de uma plataforma de sua
 ## Mais ajuda
 
 Para obter mais ajuda sobre o Angular CLI, use `ng help` ou acesse a página Visão geral e referência de comandos do Angular CLI."
+
+---
+
+**Obs.:** Infelizmente, não consegui terminar o teste técnico, questão 4, por conta de problemas técnicos (travamento de máquina). Reitero meu interesse na vaga e fico à disposição para realizar uma nova tentativa, caso seja possível e de interesse da empresa.

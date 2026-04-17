@@ -44,8 +44,16 @@ desafio-attus-frontend/
     │    └── 3.2-ngrx-todo/
     │        ├── 3-2-ngrx-todo.md
     │        ├── todo.reducer.ts
+    │        ├── todo.reducer.spec.ts
     │        ├── todo.selectors.ts
-    │        └── todo.effects.ts
+    │        ├── todo.selectors.spec.ts
+    │        ├── todo.actions.ts
+    │        ├── todo.component.ts
+    │        ├── todo.component.spec.ts
+    │        ├── todo.model.ts
+    │        ├── todo.module.ts
+    │        ├── todo.effects.ts
+    │        └── todo.effects.spec.ts
     ├── src/
     │ ├── app/
     │ │ ├── core/
@@ -150,7 +158,7 @@ cd desafio-attus-frontend/user-management-app
 
 ##### 4. Acesse no navegador
 
-> http://localhost:4200
+> <http://localhost:4200>
 
 ##### 5. Testes unitários
 
