@@ -1,66 +1,32 @@
-<!-- components/search/search.component.html -->
-<section class="search-container">
-  <div class="search-wrapper">
-    <div class="input-group">
-      <input
-        type="text"
-        [formControl]="searchControl"
-        placeholder="Buscar..."
-        class="search-input"
-        (keyup.escape)="clearSearch()"
-      />
+<div class="search-container">
+  <input
+    type="text"
+    [formControl]="searchControl"
+    placeholder="Buscar..."
+    class="search-input"
+  />
 
-      <!-- Ícone de loading -->
-      <div class="search-icon" *ngIf="isLoading">
-        <div class="spinner"></div>
-      </div>
+  @if (isLoading) {
+    <div class="loading-indicator">Carregando...</div>
+  }
 
-      <!-- Ícone de busca quando não está carregando -->
-      <div class="search-icon" *ngIf="!isLoading">🔍</div>
-
-      <!-- Botão limpar -->
-      <button
-        *ngIf="searchControl.value"
-        class="clear-button"
-        (click)="clearSearch()"
-        type="button"
-      >
-        ✕
-      </button>
+  @if (errorMessage) {
+    <div class="error-message">
+      {{ errorMessage }}
     </div>
-  </div>
+  }
 
-  <!-- Mensagem de erro -->
-  <div *ngIf="errorMessage" class="error-message">
-    {{ errorMessage }}
-  </div>
+  @if (results$ | async; as results) {
+    <ul class="results-list">
+      @for (result of results; track result.id) {
+        <li class="result-item">
+          {{ result.name }}
+        </li>
+      }
 
-  <!-- Resultados da busca -->
-  <div class="results-container">
-    <div
-      *ngIf="
-        searchControl.value && !isLoading && (searchResults$ | async) as results
-      "
-      class="results"
-    >
-      <!-- Mensagem quando não há resultados -->
-      <div *ngIf="results.length === 0" class="no-results">
-        Nenhum resultado encontrado para "{{ searchControl.value }}"
-      </div>
-
-      <!-- Lista de resultados -->
-      <div *ngFor="let result of results" class="result-item">
-        <h3>{{ result.id }}. {{ result.title || result.name }}</h3>
-        <p>{{ result.body || result.description }}</p>
-      </div>
-    </div>
-
-    <!-- Loading skeleton quando está buscando -->
-    <div *ngIf="isLoading && searchControl.value" class="loading-skeleton">
-      <div class="skeleton-item" *ngFor="let item of [1, 2, 3]">
-        <div class="skeleton-title"></div>
-        <div class="skeleton-description"></div>
-      </div>
-    </div>
-  </div>
-</section>
+      @if (results.length === 0 && searchControl.value && !isLoading) {
+        <li class="no-results">Nenhum resultado encontrado</li>
+      }
+    </ul>
+  }
+</div>

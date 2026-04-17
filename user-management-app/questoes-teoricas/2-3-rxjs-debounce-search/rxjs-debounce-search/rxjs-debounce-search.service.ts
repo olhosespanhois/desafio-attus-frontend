@@ -1,31 +1,29 @@
-// services/search.service.ts
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, delay, of } from 'rxjs';
+import { Observable, of } from 'rxjs';
+import { delay } from 'rxjs/operators';
 
-export interface SearchResult {
+export interface RxjsDebounceSearchInterface {
   id: number;
   name: string;
-  description: string;
 }
 
 @Injectable({
   providedIn: 'root',
 })
 export class RxjsDebounceSearchService {
-  constructor(private http: HttpClient) {}
-
-  search(term: string): Observable<SearchResult[]> {
+  search(term: string): Observable<RxjsDebounceSearchInterface[]> {
     // Simulando uma requisição HTTP com delay
     if (!term.trim()) {
       return of([]);
     }
 
-    // Exemplo real: return this.http.get<SearchResult[]>(`/api/search?q=${term}`);
-    return this.http
-      .get<
-        SearchResult[]
-      >(`https://jsonplaceholder.typicode.com/posts?q=${term}`)
-      .pipe(delay(300)); // Simulando latência de rede
+    // Mock para demonstração
+    const mockResults: RxjsDebounceSearchInterface[] = [
+      { id: 1, name: `${term} - Result 1` },
+      { id: 2, name: `${term} - Result 2` },
+      { id: 3, name: `${term} - Result 3` },
+    ];
+
+    return of(mockResults).pipe(delay(800)); // Simula delay da rede
   }
 }
